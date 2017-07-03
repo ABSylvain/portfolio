@@ -15,7 +15,7 @@ body {
     align-items: center;
 }
 
-#arrow {
+#Warrow {
     width: 100px;
     height: 100px;
 }
@@ -24,6 +24,7 @@ body {
     width: 100%;
     height: 100vh;
     background: black;
+    display: flex;
 }
 
 #more {
@@ -33,7 +34,41 @@ body {
 }
 
 .fenetre1 {
-    display: block;
-    width: auto;
+    width: 25%;
     height: 100%;
+    padding: 0;
+    margin: 0;
+    transition: all 1s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fenetre1:hover {
+    width: 60%;
+}
+
+a {
+    width: 100px;
+    height: 15%;
+    -webkit-text-fill-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+#Barrow {
+    position: absolute;
+    background-image: url("img/arrow.svg");
+    left: 47%;
+    bottom: 10px;
+    width: 25px;
+    height: 47px;
+    filter: invert(1);
+    background-size: 430%;
+    background-position: -41px -12px;
 }

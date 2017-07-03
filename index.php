@@ -24,7 +24,7 @@
             <div id="present">
                 <h2>Arnaud-Bourique Sylvain</h2>
                 <p>La petite description des familles, hayayaya !! c'est classe me manque juste la photo de fond.</p>
-                <img id="arrow" src="img/arrow.svg"/>
+                <img id="Warrow" src="img/arrow.svg"/>
             </div>
         </div>
         <div class="section">
@@ -48,6 +48,7 @@
                     }
                 }
             ?>
+            <div id="Barrow"></div>
             </div>
         </div>
         <div class="section">

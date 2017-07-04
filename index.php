@@ -53,7 +53,20 @@
         </div>
         <div class="section">
             <div id="more">
+                <section id="cv">
+                    <h3>Un peut plus</h3>
+                    <h4>Nom : </h4><h5>Arnaud-Bourique</h5>
+                    <h4>Prenom : </h4><h5>Sylvain</h5>
+                    <h4>Naissance : </h4><h5>01/02/1993</h5>
+                    <h4>Email : </h4><h5>arnaudbouriquesylvain@gmail.com</h5>
+                    <h4>GitHub : </h4><h5><a href="https://github.com/ABSylvain">Mon GitHub</a></h5>
+                </section>
+                <section id="form">
+                    <h3>Un verre ?</h3>
+                    <form>
+                    <input type="text" placeholder=""/>
 
+                </section>
             </div>
         </div>
     </div>

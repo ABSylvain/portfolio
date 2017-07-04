@@ -19,6 +19,17 @@
 </head>
 
 <body>
+    <?php
+    include_once 'Contact.php';
+    if(!empty($_POST)){
+        $expediteur = htmlspecialchars($_POST['expediteur']);
+        $joindre = htmlspecialchars($_POST['joindre']);
+        $message = htmlspecialchars($_POST['message']);
+        $compte = new Contact($expediteur, $joindre, $message);
+        $compte->save($compte);
+    }
+
+    ?>
     <div id="fullpage">
         <div class="section">
             <div id="present">
@@ -55,17 +66,20 @@
             <div id="more">
                 <section id="cv">
                     <h3>Un peut plus</h3>
-                    <h4>Nom : </h4><h5>Arnaud-Bourique</h5>
-                    <h4>Prenom : </h4><h5>Sylvain</h5>
-                    <h4>Naissance : </h4><h5>01/02/1993</h5>
-                    <h4>Email : </h4><h5>arnaudbouriquesylvain@gmail.com</h5>
-                    <h4>GitHub : </h4><h5><a href="https://github.com/ABSylvain">Mon GitHub</a></h5>
+                    <div class="info"><h4>Nom : </h4><h5>Arnaud-Bourique</h5></div>
+                    <div class="info"><h4>Prenom : </h4><h5>Sylvain</h5></div>
+                    <div class="info"><h4>Naissance : </h4><h5>01/02/1993</h5></div>
+                    <div class="info"><h4>Email : </h4><h5>arnaudbouriquesylvain@gmail.com</h5></div>
+                    <div class="info"><h4>GitHub : </h4><h5><a href="https://github.com/ABSylvain">Mon GitHub</a></h5></div>
                 </section>
                 <section id="form">
                     <h3>Un verre ?</h3>
-                    <form>
-                    <input type="text" placeholder=""/>
-
+                    <form method="POST" action="#">
+                    <input name="expediteur" class="inprout" type="text" placeholder="Vous êtes ?"/>
+                    <input name="joindre" class="inprout" type="text" placeholder="Un moyen de vous joindre !"/>
+                    <textarea name="message" type="text" class="inprout" placeholder="Un petit message ?"></textarea>
+                    <button class="inprout" >Submit</button>
+                    </form>
                 </section>
             </div>
         </div>

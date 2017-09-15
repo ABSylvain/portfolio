@@ -20,7 +20,6 @@
 
 <body>
     <?php
-    include_once 'Contact.php';
     if(!empty($_POST)){
         $expediteur = htmlspecialchars($_POST['expediteur']);
         $joindre = htmlspecialchars($_POST['joindre']);
@@ -34,7 +33,7 @@
         <div class="section">
             <div id="present">
                 <h2>Arnaud-Bourique Sylvain</h2>
-                <p>La petite description des familles, hayayaya !! c'est classe me manque juste la photo de fond.</p>
+                <p>Etant curieux de comprendre les choses, j'ai choisi le développement web comme reconversion professionnel.</p>
                 <img id="Warrow" src="img/arrow.svg"/>
             </div>
         </div>
@@ -63,25 +62,15 @@
             </div>
         </div>
         <div class="section">
-            <div id="more">
-                <section id="cv">
-                    <h3>Un peut plus</h3>
-                    <div class="info"><h4>Nom : </h4><h5>Arnaud-Bourique</h5></div>
-                    <div class="info"><h4>Prenom : </h4><h5>Sylvain</h5></div>
-                    <div class="info"><h4>Naissance : </h4><h5>01/02/1993</h5></div>
-                    <div class="info"><h4>Email : </h4><h5>arnaudbouriquesylvain@gmail.com</h5></div>
-                    <div class="info"><h4>GitHub : </h4><h5><a href="https://github.com/ABSylvain">Mon GitHub</a></h5></div>
-                </section>
-                <section id="form">
-                    <h3>Un verre ?</h3>
-                    <form method="POST" action="#">
-                    <input name="expediteur" class="inprout" type="text" placeholder="Vous êtes ?"/>
-                    <input name="joindre" class="inprout" type="text" placeholder="Un moyen de vous joindre !"/>
-                    <textarea name="message" type="text" class="inprout" placeholder="Un petit message ?"></textarea>
-                    <button class="inprout" >Submit</button>
-                    </form>
-                </section>
-            </div>
+                <div id="contain">
+                    <section id="cv">
+                        <div class="info"><h5>Arnaud-Bourique</h5></div>
+                        <div class="info"><h5>Sylvain</h5></div>
+                        <div class="info"><h5>01/02/1993</h5></div>
+                        <div class="info"><h5>arnaudbouriquesylvain@gmail.com</h5></div>
+                        <div class="info"><a href="CVsylvain.pdf" id="lienDL">Télécharger C.V.</a></div>
+                    </section>
+                </div>
         </div>
     </div>
 </body>
